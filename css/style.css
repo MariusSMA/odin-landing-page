@@ -4,16 +4,22 @@
 
 /* General Styles */
 
+:root {
+	scroll-behavior: smooth;
+}
+
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: Poppins, sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
 /* Desktop Layout */
 
 body {
+	display: flex;
+	flex-direction: column;
 	min-height: 100vh;
 	color: #fff;
 }
@@ -55,6 +61,10 @@ body {
 	border-bottom: 1px solid #fff;
 }
 
+main {
+	flex: 1;
+}
+
 .hero {
 	background-color: #1f2937;
 	color: #f9faf8;
@@ -77,23 +87,23 @@ body {
 .hero-title {
 	font-size: 3rem;
 	font-weight: 800;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 	line-height: 1.15;
 }
 
 .hero-description {
 	font-size: 18px;
 	color: #e5e7eb;
-	margin-bottom: 1.75rem;
+	margin-bottom: 2.5rem;
 }
 
 .btn {
 	font-size: 1.25rem;
 	font-weight: 700;
+	text-decoration: none;
 	background-color: #3882f6;
 	color: #ffffff;
 	padding: 0.5rem 2.5rem;
-	border: none;
 	border-radius: 0.5rem;
 	cursor: pointer;
 	transition: 0.35s;
@@ -105,74 +115,107 @@ body {
 	transform: translateY(-0.25rem);
 }
 
+.hero-btn {
+	display: inline-block;
+	padding: 0.8rem 2.5rem;
+}
+
+.hero-btn:hover {
+	background-color: #3881f6c9;
+	color: #ffffff;
+}
+
 .hero-image {
 	background-image: url(../images/hero-img.jpg);
+	opacity: 0.7;
+	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 281px;
+	height: 291px;
+	border-radius: 1rem;
 }
 
-.info {
+.features {
 	background-color: rgb(250, 250, 250);
-	padding: 5rem 0;
+	padding: 4rem 0 8rem;
 }
 
-.info-section {
+.features-section {
 	color: #1f2937;
 	text-align: center;
 }
 
-.info-title {
+.features-title {
 	font-size: 2.25rem;
 	font-weight: 800;
 	color: #1f2937;
 	margin-bottom: 6rem;
 }
 
-.info-cards {
+.cards {
 	display: flex;
 	justify-content: center;
-	gap: 4rem;
+	gap: 3.5rem;
+	flex-wrap: wrap;
 }
 
-.info-card {
-	display: grid;
-	place-content: center;
+.card {
 	background-color: #fff;
 	padding: 2rem;
 	border-radius: 1rem;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	transition: 0.35s;
 }
 
-.info-card-img {
+.card:hover {
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px;
+	transform: translateY(-0.25rem);
+}
+
+.card-img {
 	display: block;
-	margin: 0 auto 2rem;
+	margin: 0 auto 1rem;
 	border-radius: 1rem;
 }
 
-.info-card-description {
-	line-height: 1.25;
+.card-title {
+	font-size: 1.25rem;
+	margin-bottom: 0.5rem;
 }
 
-.quote {
+.card-description {
+	line-height: 1.25;
+	max-width: 17ch;
+	margin: 0 auto;
+}
+
+#testimonials {
 	background-color: #e5e7eb;
 	color: #1f2937;
-	padding: 7.5rem 0;
+	padding: 5rem 0 8rem;
 }
 
-.quote-section {
+.testimonials-title {
+	font-size: 2.25rem;
+	font-weight: 800;
+	color: #1f2937;
+	margin-bottom: 4rem;
+}
+
+.testimonials-section {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-.quote-text {
+.testimonials-text {
 	font-size: 2.25rem;
 	font-weight: 300;
 	font-style: italic;
+	margin-bottom: 2rem;
 }
 
-.quote-cite {
+.testimonials-cite {
 	font-size: 1.5rem;
 	font-weight: 800;
 	margin-left: auto;
@@ -183,11 +226,19 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-color: rgb(250, 250, 250);
-	padding: 8rem 0;
+	padding: 5rem 0 8rem;
 }
 
 .cta > .container {
 	width: 100%;
+}
+
+.cta-title {
+	font-size: 2.25rem;
+	font-weight: 800;
+	text-align: center;
+	color: #1f2937;
+	margin-bottom: 6rem;
 }
 
 .cta-btn {
@@ -195,7 +246,8 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 15rem;
+	gap: 2rem;
+	flex-wrap: wrap;
 	background-color: #3b82f6;
 	padding: 3rem 7rem;
 	border-radius: 0.5rem;
@@ -204,7 +256,12 @@ body {
 .cta-btn-title {
 	font-size: 1.5rem;
 	font-weight: 600;
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.75rem;
+}
+
+.cta-btn-description {
+	width: 40ch;
+	line-height: 1.35;
 }
 
 .cta-btn-sign-up-btn {

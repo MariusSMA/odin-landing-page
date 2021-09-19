@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" href="./images/icon.png" />
 		<link rel="stylesheet" href="./css/style.css" />
 		<title>Odin Landing Page</title>
 	</head>
@@ -11,16 +12,18 @@
 		<header class="header">
 			<div class="container">
 				<nav class="navbar">
-					<h2 class="logo">Header Logo</h2>
+					<h2 class="logo">Eclipse Designs</h2>
 					<ul class="nav-list">
 						<li class="nav-list-item">
-							<a class="nav-list-item-link" href="#">header link one</a>
+							<a class="nav-list-item-link" href="#features">Features</a>
 						</li>
 						<li class="nav-list-item">
-							<a class="nav-list-item-link" href="#">header link two</a>
+							<a class="nav-list-item-link" href="#testimonials"
+								>Testimonials</a
+							>
 						</li>
 						<li class="nav-list-item">
-							<a class="nav-list-item-link" href="#">header link three</a>
+							<a class="nav-list-item-link" href="#contact-us">Contact Us</a>
 						</li>
 					</ul>
 				</nav>
@@ -31,93 +34,104 @@
 				<div class="container">
 					<div class="hero-section">
 						<div class="hero-content">
-							<h1 class="hero-title">This website is awesome</h1>
+							<h1 class="hero-title">We deliver unique experiences</h1>
 							<p class="hero-description">
-								This website has some subtext that goes here under the main
-								title. It's a smaller font and the color is lower contrast
+								A complex team ready to take on your desires and forge them into
+								a great adventure on the web.
 							</p>
-							<button class="hero-btn btn">Sign up</button>
+							<a href="#contact-us" class="hero-btn btn"
+								>Get in touch with us</a
+							>
 						</div>
 						<div class="hero-image"></div>
 					</div>
 				</div>
 			</section>
-			<section class="info">
+			<section class="features" id="features">
 				<div class="container">
-					<div class="info-section">
-						<h2 class="info-title">Some random information</h2>
-						<div class="info-cards">
-							<div class="info-card">
+					<div class="features-section">
+						<h2 class="features-title">Our Features</h2>
+						<div class="cards">
+							<div class="card">
 								<img
-									src="./images/business-tech.jpg"
-									class="info-card-img"
+									src="./images/experience-img.jpg"
+									class="card-img"
 									width="180"
 									alt="Business Tech"
 								/>
-								<p class="info-card-description">
-									This is some subtext under an illustration or image
+								<h3 class="card-title">Experience</h3>
+								<p class="card-description">
+									Over <strong>10 years</strong> in developing creative websites
 								</p>
 							</div>
-							<div class="info-card">
+							<div class="card">
 								<img
-									src="./images/business-tech.jpg"
-									class="info-card-img"
+									src="./images/services-img.jpg"
+									class="card-img"
 									width="180"
 									alt="Business Tech"
 								/>
-								<p class="info-card-description">
-									This is some subtext under an illustration or image
+								<h3 class="card-title">Variety of services</h3>
+								<p class="card-description">
+									A wide range of services that will take you to the next level
 								</p>
 							</div>
-							<div class="info-card">
+							<div class="card">
 								<img
-									src="./images/business-tech.jpg"
-									class="info-card-img"
+									src="./images/seo-img.jpg"
+									class="card-img"
 									width="180"
 									alt="Business Tech"
 								/>
-								<p class="info-card-description">
-									This is some subtext under an illustration or image
+								<h3 class="card-title">SEO</h3>
+								<p class="card-description">
+									Understanding of the SEO Design that will rocket up your site
 								</p>
 							</div>
-							<div class="info-card">
+							<div class="card">
 								<img
-									src="./images/business-tech.jpg"
-									class="info-card-img"
+									src="./images/available-img.jpg"
+									class="card-img"
 									width="180"
 									alt="Business Tech"
 								/>
-								<p class="info-card-description">
-									This is some subtext under an illustration or image
+								<h3 class="card-title">Always Available</h3>
+								<p class="card-description">
+									We are available 24/7, do not hesitate to contact us
 								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="quote">
+			<section id="testimonials">
 				<div class="container">
-					<div class="quote-section">
-						<blockquote class="quote-text">
-							This is an inspiring quote or a testimonial from a customer. Maybe
-							it's just filling up space, or maybe people will actually read it.
-							Who knows? All I know is that it looks nice.
+					<div class="testimonials-section">
+						<h2 class="testimonials-title">Testimonials</h2>
+						<blockquote class="testimonials-text">
+							Eclipse Designs offers a powerful suite of tools that every
+							company must have. They have the professionalism, creativity and
+							response rate to a whole new level. I wish I could work with them
+							sooner.
 						</blockquote>
-						<cite class="quote-cite">- Thor, God of Thunder</cite>
+						<cite class="testimonials-cite"
+							>- Peter Shell, CEO of Lucid Software</cite
+						>
 					</div>
 				</div>
 			</section>
-			<section class="cta">
+			<section class="cta" id="contact-us">
 				<div class="container">
+					<h2 class="cta-title">Contact Us</h2>
 					<div class="cta-btn">
 						<div class="cta-btn-text">
-							<h3 class="cta-btn-title">Call to action! It's time!</h3>
+							<h3 class="cta-btn-title">Contact us (24/7 available)</h3>
 							<p class="cta-btn-description">
-								Sign up for our product by clicking that button right over
-								there!
+								We are always available for you, so contact us if you want to
+								take your website to the next level
 							</p>
 						</div>
-						<button class="cta-btn-sign-up-btn btn">Sign up</button>
+						<a href="#" class="cta-btn-sign-up-btn btn">Contact Us</a>
 					</div>
 				</div>
 			</section>
