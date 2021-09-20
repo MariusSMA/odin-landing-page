@@ -1,10 +1,15 @@
 /* Font Import */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,300&display=swap");
 
 /* General Styles */
 
 :root {
+	--dark-blue: #1f2937;
+	--blue: #0b64f4;
+}
+
+html {
 	scroll-behavior: smooth;
 }
 
@@ -31,7 +36,7 @@ body {
 }
 
 .header {
-	background-color: #1f2937;
+	background-color: var(--dark-blue);
 	padding: 1rem 0;
 }
 
@@ -39,6 +44,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .logo {
@@ -48,7 +54,8 @@ body {
 
 .nav-list {
 	display: flex;
-	gap: 2rem;
+	flex-wrap: wrap;
+	gap: 3rem;
 	list-style: none;
 }
 
@@ -66,7 +73,7 @@ main {
 }
 
 .hero {
-	background-color: #1f2937;
+	background-color: var(--dark-blue);
 	color: #f9faf8;
 }
 
@@ -101,9 +108,10 @@ main {
 	font-size: 1.25rem;
 	font-weight: 700;
 	text-decoration: none;
-	background-color: #3882f6;
+	background-color: var(--blue);
 	color: #ffffff;
 	padding: 0.5rem 2.5rem;
+	border: 0.125rem solid #fff;
 	border-radius: 0.5rem;
 	cursor: pointer;
 	transition: 0.35s;
@@ -111,18 +119,21 @@ main {
 
 .btn:hover {
 	background-color: #fff;
-	color: #3b82f6;
+	color: var(--blue);
 	transform: translateY(-0.25rem);
 }
 
 .hero-btn {
 	display: inline-block;
 	padding: 0.8rem 2.5rem;
+	border: none;
+	border: 0.125rem solid var(--blue);
 }
 
 .hero-btn:hover {
-	background-color: #3881f6c9;
+	background-color: var(--dark-blue);
 	color: #ffffff;
+	border: 0.125rem solid #fff;
 }
 
 .hero-image {
@@ -140,14 +151,13 @@ main {
 }
 
 .features-section {
-	color: #1f2937;
+	color: var(--dark-blue);
 	text-align: center;
 }
 
 .features-title {
 	font-size: 2.25rem;
 	font-weight: 800;
-	color: #1f2937;
 	margin-bottom: 6rem;
 }
 
@@ -190,14 +200,13 @@ main {
 
 #testimonials {
 	background-color: #e5e7eb;
-	color: #1f2937;
+	color: var(--dark-blue);
 	padding: 5rem 0 8rem;
 }
 
 .testimonials-title {
 	font-size: 2.25rem;
 	font-weight: 800;
-	color: #1f2937;
 	margin-bottom: 4rem;
 }
 
@@ -237,7 +246,7 @@ main {
 	font-size: 2.25rem;
 	font-weight: 800;
 	text-align: center;
-	color: #1f2937;
+	color: var(--dark-blue);
 	margin-bottom: 6rem;
 }
 
@@ -248,7 +257,7 @@ main {
 	justify-content: space-between;
 	gap: 2rem;
 	flex-wrap: wrap;
-	background-color: #3b82f6;
+	background-color: var(--blue);
 	padding: 3rem 7rem;
 	border-radius: 0.5rem;
 }
@@ -264,13 +273,9 @@ main {
 	line-height: 1.35;
 }
 
-.cta-btn-sign-up-btn {
-	border: 0.125rem solid #fff;
-}
-
 footer {
 	font-size: 1.125rem;
-	background-color: #1f2937;
+	background-color: var(--dark-blue);
 	text-align: center;
 	padding: 2rem 0;
 }
